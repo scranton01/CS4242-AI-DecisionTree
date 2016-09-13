@@ -23,7 +23,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.2.1</version>
                 <configuration>
-                    <mainClass>Main</mainClass>
+                    <mainClass>decisionTree.Main</mainClass>
                 </configuration>
             </plugin>
             <plugin>
@@ -31,7 +31,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Main</mainClass>
+                            <mainClass>decisionTree.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
