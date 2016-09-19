@@ -24,7 +24,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
 
         while (!input.equals("q")) {
-            System.out.println("Event ('q' to exit) : ");
+            System.out.print("Event ('q' to exit) : ");
             input = in.nextLine();
             root.search(input);
 

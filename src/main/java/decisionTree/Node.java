@@ -51,7 +51,7 @@ public class Node {
         AtomicInteger dfsStep = new AtomicInteger(0);
         Queue<Node> queue = new LinkedList<>();
         queue.add(this);
-        System.out.println("Response = " + bfs(queue, keyword, bfsStep));
+        bfs(queue,keyword,bfsStep);
         System.out.println("Response = " + dfs(this, keyword, dfsStep));
         System.out.println("Item found in " + bfsStep + " steps with BFS, " + dfsStep + " steps with DFS.");
     }
