@@ -1,5 +1,6 @@
 package decisionTree;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -11,9 +12,13 @@ public class Node {
     public Node(String behavior, String response){
         this.behavior = behavior;
         this.response = response;
+        this.children = new ArrayList<>();
     }
 
-    public void setChildren(List<Node> children){
-        this.children = children;
+    public void setChildren(Node children){
+        this.children.add(children);
     }
+
+    public void traverseDfs(){}
+    public void traverseBfs(){}
 }
