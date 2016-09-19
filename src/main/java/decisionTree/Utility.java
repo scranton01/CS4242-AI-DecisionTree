@@ -1,3 +1,8 @@
+/**
+ * CS4242 Artificial Intelligence
+ * @Date 9/19/2016
+ * @Author Jun Nguyen
+ */
 package decisionTree;
 
 
@@ -19,12 +24,11 @@ public class Utility {
         return root;
     }
 
-    static void xmlParser(BufferedReader inputReader, Node node) {
+    private static void xmlParser(BufferedReader inputReader, Node node) {
         String input;
         try {
             do {
                 input = inputReader.readLine();
-                System.out.println(input);
                 if (input.contains("<node")) {
                     Map map = xmlLineToMap(input);
                     Node childNode = new Node(map.get("behavior").toString(), map.get("response").toString());
@@ -46,7 +50,7 @@ public class Utility {
         return;
     }
 
-    static Map xmlLineToMap(String line) {
+    private static Map xmlLineToMap(String line) {
         String[] split = line.split("\\s+");
         Map map = new HashMap<String, String>();
 
